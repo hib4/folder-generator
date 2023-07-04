@@ -1,18 +1,23 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.hib4.presentationfoldergenerator</id>
-    <name>presentation-folder-generator Template</name>
-    <vendor>hib4</vendor>
+    <name>Presentation Folder Generator</name>
+    <vendor email="hiba.kudus@gmail.com" url="https://github.com/hib4">hib4</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <actions>
+        <action class="com.github.hib4.presentationfoldergenerator.action.ActionGenerator"
+                description="Generate a folder presentation"
+                id="com.github.hib4.presentationfoldergenerator.action.ActionGenerator"
+                icon="AllIcons.Actions.NewFolder"
+                text="Presentation Folder Generator">
+            <add-to-group group-id="NewGroup"
+                          anchor="first"/>
+        </action>
+    </actions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.hib4.presentationfoldergenerator.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.hib4.presentationfoldergenerator.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    </extensions>
 </idea-plugin>
