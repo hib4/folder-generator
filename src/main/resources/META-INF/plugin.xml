@@ -6,6 +6,17 @@
 
     <depends>com.intellij.modules.platform</depends>
 
+    <actions>
+        <action class="com.github.hib4.presentationfoldergenerator.action.ActionGenerator"
+                description="Generate a folder presentation"
+                id="com.github.hib4.presentationfoldergenerator.action.ActionGenerator"
+                icon="AllIcons.Actions.NewFolder"
+                text="Presentation Folder Generator">
+            <add-to-group group-id="NewGroup"
+                          anchor="first"/>
+        </action>
+    </actions>
+
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
