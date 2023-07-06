@@ -1,7 +1,7 @@
-package com.github.hib4.presentationfoldergenerator.action
+package com.github.hib4.foldergenerator.action
 
-import com.github.hib4.presentationfoldergenerator.generator.Generator
-import com.github.hib4.presentationfoldergenerator.ui.FeatureDialog
+import com.github.hib4.foldergenerator.generator.Generator
+import com.github.hib4.foldergenerator.ui.FeatureDialog
 import com.intellij.openapi.actionSystem.*
 import com.intellij.openapi.command.WriteCommandAction
 import com.intellij.openapi.vfs.VirtualFile
@@ -39,11 +39,13 @@ class ActionGenerator : AnAction() {
                         "local", "remote"
                 )
             }
+
             Generator.createFolder(
                     project, folder,
                     "domain",
                     "entities"
             )
+
             Generator.createFolder(
                     project, folder,
                     "presentation",

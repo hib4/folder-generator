@@ -1,4 +1,4 @@
-package com.github.hib4.presentationfoldergenerator.ui
+package com.github.hib4.foldergenerator.ui
 
 import com.intellij.notification.Notification
 import com.intellij.notification.NotificationType
@@ -10,8 +10,8 @@ interface Notifier {
         fun warning(project: Project?, content: String) =
                 Notifications.Bus.notify(
                         Notification(
-                                "PresentationFolderGenerator",
-                                "Presentation Folder Generator Warning",
+                                "FolderGenerator",
+                                "Folder Generator Warning",
                                 content,
                                 NotificationType.WARNING
                         ), project
@@ -20,8 +20,8 @@ interface Notifier {
         fun error(project: Project?, content: String) =
                 Notifications.Bus.notify(
                         Notification(
-                                "PresentationFolderGenerator",
-                                "Presentation Folder Generator Error",
+                                "FolderGenerator",
+                                "Folder Generator Error",
                                 content,
                                 NotificationType.ERROR
                         ), project

@@ -1,23 +1,23 @@
-# presentation-folder-generator
+# folder-generator
 
-![Build](https://github.com/hib4/presentation-folder-generator/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/22198-presentation-folder-generator.svg)](https://plugins.jetbrains.com/plugin/22198-presentation-folder-generator)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/22198-presentation-folder-generator.svg)](https://plugins.jetbrains.com/plugin/22198-presentation-folder-generator)
+![Build](https://github.com/hib4/folder-generator/workflows/Build/badge.svg)
+[![Version](https://img.shields.io/jetbrains/plugin/v/22206.svg)](https://plugins.jetbrains.com/plugin/22206)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/22206.svg)](https://plugins.jetbrains.com/plugin/22206)
 
 <!-- Plugin description -->
-Presentation Folder Generator is used to generate a simple architectural folder structure.
+The Architectural Folder Generator is used to generate a simple architectural folder structure.
 <!-- Plugin description end -->
 
 ## Installation
 
 - Using IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "presentation-folder-generator"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "folder-generator"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
 
-  Download the [latest release](https://github.com/hib4/presentation-folder-generator/releases/latest) and install it manually using
+  Download the [latest release](https://github.com/hib4/folder-generator/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
