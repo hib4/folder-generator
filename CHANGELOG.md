@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# presentation-folder-generator Changelog
+# folder-generator Changelog
 
 ## [Unreleased]
 ### Added
@@ -8,9 +8,15 @@
 
 ## [1.0.0]
 ### Added
-- Presentation Folder Generator feature
+- folder Folder Generator feature
 
 ## [1.1.0]
 ### Updated
 - Changed old folder structures to new folder structures
 - Description content
+
+## [2.0.0]
+### Updated
+- Plugin id
+- Plugin name
+- Plugin group

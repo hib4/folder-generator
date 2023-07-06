@@ -1,4 +1,4 @@
-package com.github.hib4.presentationfoldergenerator.ui;
+package com.github.hib4.foldergenerator.ui;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;
@@ -13,7 +13,7 @@ public class FeatureDialog extends DialogWrapper {
     public FeatureDialog(Project project) {
         super(project);
         this.init();
-        this.setTitle("Presentation Folder Generator");
+        this.setTitle("Folder Generator");
     }
 
     public String getName() {

@@ -1,6 +1,6 @@
-package com.github.hib4.presentationfoldergenerator.generator
+package com.github.hib4.foldergenerator.generator
 
-import com.github.hib4.presentationfoldergenerator.ui.Notifier
+import com.github.hib4.foldergenerator.ui.Notifier
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
 import java.io.IOException
