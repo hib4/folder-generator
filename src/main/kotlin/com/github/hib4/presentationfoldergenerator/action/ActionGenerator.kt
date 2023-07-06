@@ -4,6 +4,7 @@ import com.github.hib4.presentationfoldergenerator.generator.Generator
 import com.github.hib4.presentationfoldergenerator.ui.FeatureDialog
 import com.intellij.openapi.actionSystem.*
 import com.intellij.openapi.command.WriteCommandAction
+import com.intellij.openapi.vfs.VirtualFile
 
 class ActionGenerator : AnAction() {
     override fun actionPerformed(actionEvent: AnActionEvent) {
@@ -25,9 +26,29 @@ class ActionGenerator : AnAction() {
                 ) ?: return@runWriteCommandAction
                 folder = result[root]
             }
-            Generator.createFolder(project, folder, "bloc")
-            Generator.createFolder(project, folder, "pages")
-            Generator.createFolder(project, folder, "widgets")
+
+            val mapOrFalse = Generator.createFolder(
+                    project, folder,
+                    "data",
+                    "repositories"
+            ) ?: return@runWriteCommandAction
+            mapOrFalse["data"]?.let { data: VirtualFile ->
+                Generator.createFolder(
+                        project, data,
+                        "data_sources",
+                        "local", "remote"
+                )
+            }
+            Generator.createFolder(
+                    project, folder,
+                    "domain",
+                    "entities"
+            )
+            Generator.createFolder(
+                    project, folder,
+                    "presentation",
+                    "bloc", "pages", "widgets"
+            )
         }
     }
 }

@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/22198-presentation-folder-generator.svg)](https://plugins.jetbrains.com/plugin/22198-presentation-folder-generator)
 
 <!-- Plugin description -->
-Presentation Folder Generator is used for internal team needs.
+Presentation Folder Generator is used to generate a simple architectural folder structure.
 <!-- Plugin description end -->
 
 ## Installation

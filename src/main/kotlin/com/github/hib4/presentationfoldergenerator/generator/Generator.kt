@@ -10,7 +10,8 @@ interface Generator {
         fun createFolder(
                 project: Project,
                 folder: VirtualFile,
-                parent: String
+                parent: String,
+                vararg children: String
         ): Map<String, VirtualFile>? {
             try {
                 for (child in folder.children) {
@@ -21,6 +22,10 @@ interface Generator {
                 }
                 val mapOfFolder = mutableMapOf<String, VirtualFile>()
                 mapOfFolder[parent] = folder.createChildDirectory(folder, parent)
+                for (child in children) {
+                    mapOfFolder[child] =
+                            mapOfFolder[parent]?.createChildDirectory(mapOfFolder[parent], child) ?: throw IOException()
+                }
                 return mapOfFolder
             } catch (e: IOException) {
                 Notifier.warning(project, "Couldn't create $parent directory")
